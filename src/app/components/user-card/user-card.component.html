@@ -1,0 +1,19 @@
+<span class="top-bar">
+    <h3 class="title">Current user</h3>
+    <button (click)="logout.emit()"
+            [matRippleColor]="MAT_RIPPLE_COLOR"
+            [matRippleUnbounded]="false"
+            class="logout-button"
+            mat-icon-button
+            mat-ripple
+            title="Logout">
+        <mat-icon>logout</mat-icon>
+    </button>
+</span>
+<span class="data-row">
+    <mat-icon class="data-row__icon">face</mat-icon>
+    <strong class="data-row__property">Full name: </strong>{{ user.fullName }}
+</span>
+<span class="data-row">
+    <mat-icon class="data-row__icon">email</mat-icon>
+    <strong class="data-row__property">e-mail: </strong><a [href]="'mailto:' + user.email">{{ user.email }}</a></span>

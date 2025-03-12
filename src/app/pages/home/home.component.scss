@@ -1,0 +1,25 @@
+@use 'colors' as colors;
+@use 'spacing' as spacing;
+
+:host {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(colors.$milky-white, colors.$greyish-white);
+
+  @media(min-width: 1400px) {
+    .user-card {
+      position: absolute;
+      right: spacing.$xx-large;
+      top: spacing.$xx-large;
+    }
+  }
+
+  @media(max-width: 1400px) {
+    .user-card {
+      margin-top: spacing.$x-large;
+      margin-bottom: spacing.$x-large;
+    }
+  }
+}

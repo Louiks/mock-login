@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@doe.com",
+  "modificationDate": "01-01-2025",
+  "creationDate": "01-01-2025",
+  "createdBy": "JK"
+}

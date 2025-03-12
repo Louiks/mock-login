@@ -1,0 +1,9 @@
+<h1>Home</h1>
+<iframe [src]="iframeUrl"
+        height="850"
+        width="800"></iframe>
+@if (userData) {
+    <app-user-card class="user-card"
+                   (logout)="logout()"
+                   [user]="userData"></app-user-card>
+}
