@@ -72,6 +72,15 @@ mock-login/
 
 To build the project, run `npm run ng build`. The build artifacts will be stored in the `dist/` directory.
 
+# Tests
+
+The application has been tested with unit tests.
+
+- unit tests (jasmine):
+    - 27 unique tests
+    - Can be found across the whole folder structure.
+    - Can be run using `ng test` command
+
 # Deployment
 
 Comprehensive deployment instructions can be
